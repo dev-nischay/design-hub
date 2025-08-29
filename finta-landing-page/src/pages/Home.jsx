@@ -8,6 +8,8 @@ export default () => {
   return (
     <Layout>
       <Container>
+        <div className="left-line"></div>
+        <div className="right-line"></div>
         <Navbar />
         <Hero />
       </Container>
