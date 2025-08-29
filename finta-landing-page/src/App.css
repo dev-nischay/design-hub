@@ -1,42 +1,163 @@
-#root {
-  max-width: 1280px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  font-family: Inter;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 986px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  position: relative;
 }
 
+.layout {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, white, #99beef);
+}
+
+.navbar-root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.link-items {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+.link-items:hover {
+  color: black;
+  transition: color 0.2s ease-out;
+}
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  font-size: 20px;
+  font-weight: 600;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.start-btn {
+  all: unset;
+  font-size: 14px;
+  background-color: #2579f3;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  text-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 4px -1px rgba (30, _31, _37, _0.38);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.start-btn:hover {
+  background-color: #2262c7;
+  transition: background-color 0.5s;
 }
 
-.card {
-  padding: 2em;
+.badge {
+  font-size: 12px;
+  font-family: Inter;
+  max-width: 280px;
+  background-color: rgba(30, 31, 37, 0.04);
+  border: 0.5px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 3px 11px 3px 11px;
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.badge:hover {
+  background-color: rgba(30, 31, 37, 0.08);
 }
 
-.read-the-docs {
-  color: #888;
+.hero-root {
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 56px;
+  max-width: 590px;
+  text-align: center;
+  font-weight: 600;
+  opacity: 1;
+  line-height: 60px;
+  margin-top: 24px;
+}
+.hero-subtitle {
+  text-align: center;
+  max-width: 500px;
+  color: #595959;
+  line-height: 27px;
+}
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-cta-btn {
+  all: unset;
+  background-color: transparent;
+  color: black;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.hero-cta-btn:hover {
+  background-color: #5959591e;
+}
+.hero-based {
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.left-line {
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  left: -10px;
+  opacity: 0.5;
+  background-color: #e0e7ff;
+}
+
+.right-line {
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  right: -10px;
+  opacity: 0.5;
+  background-color: #e0e7ff;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  max-width: 1000px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
