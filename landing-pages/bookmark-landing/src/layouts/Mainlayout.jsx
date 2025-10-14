@@ -4,6 +4,7 @@ import { Navbar } from "../components/Navbar";
 export const Mainlayout = () => {
   return (
     <Container>
+      <Navbar />
       <Outlet />
     </Container>
   );
