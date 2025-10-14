@@ -1,7 +1,7 @@
 export const Container = ({ children }) => {
   return (
-    <div className="bg-slate-200 min-h-screen w-full">
-      <div className="max-w-md flex justify-center mx-auto border border-black  h-screen p-2">
+    <div className="bg-white min-h-screen w-full">
+      <div className="max-w-md  min-h-screen mx-auto border border-black   p-2 font-[rubik]">
         {children}
       </div>
     </div>
