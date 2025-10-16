@@ -5,6 +5,8 @@ export default {
     extend: {
       colors: {
         btnPrimary: "#5368DF",
+        DarkBlue: "hsl(229, 31%, 21%)",
+        customGrey: "rgb(107,114,128)",
       },
     },
   },
