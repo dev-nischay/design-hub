@@ -2,9 +2,9 @@ import heroImage from "../assets/hero-image.svg";
 import { Button } from "./Button";
 export const Hero = () => {
   return (
-    <div>
-      <div className="mt-[4.2rem]">
-        <img src={heroImage} alt="image" />
+    <div className="w-full">
+      <div className="mt-[4.2rem] ">
+        <img src={heroImage} alt="image" className="mx-auto" />
       </div>
       <div className="flex flex-col gap-5 text-center ">
         <div>
@@ -18,10 +18,11 @@ export const Hero = () => {
           <Button text={"Get It On Chrome"} />
           <Button
             text={"Get It On Firefox"}
-            className="bg-[#D1D5DB] border-[#D1D5DB]  text-black  hover:border-neutral-300 hover:opacity-80 hover:text-black"
+            className="bg-[#D1D5DB] border-[#D1D5DB]  text-black  hover:border-neutral-400 hover:opacity-80 hover:text-black"
           />
         </div>
       </div>
     </div>
   );
 };
+// fix the  button above its not loading the colors correctly
