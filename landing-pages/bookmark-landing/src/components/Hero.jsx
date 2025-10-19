@@ -2,11 +2,11 @@ import heroImage from "../assets/hero-image.svg";
 import { Button } from "./Button";
 export const Hero = () => {
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <div className="mt-[4.2rem] ">
         <img src={heroImage} alt="image" className="mx-auto" />
       </div>
-      <div className="flex flex-col gap-5 text-center ">
+      <div className="flex flex-col gap-5 text-center md:max-w-lg mx-auto ">
         <div>
           <h1 className="font-semibold text-3xl">A Simple Bookmark Manager</h1>
         </div>
