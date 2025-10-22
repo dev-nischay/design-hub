@@ -18,7 +18,7 @@ export const FeatureTypes = ({ setState }) => {
   ];
 
   return (
-    <div className="flex text-center flex-col gap-5 max-w-md">
+    <div className="flex  text-center flex-col gap-5 md:flex-row ">
       {types.map((e, index) => (
         <LocalBtn
           key={index}
@@ -44,7 +44,7 @@ const LocalBtn = ({ featureType, content, setState }) => {
       <div
         className={` text-center bg-none  text-md pb-6  ${
           click ? "text-red-500" : "text-black"
-        } max-w-md`}
+        } `}
       >
         {featureType}
       </div>

@@ -1,3 +1,4 @@
+import { Divide } from "lucide-react";
 import feature1 from "../../../assets/feature-1-image.svg";
 import feature2 from "../../../assets/feature-2-image.svg";
 import feature3 from "../../../assets/feature-3-image.svg";
@@ -22,3 +23,5 @@ export const featureContent = [
       "Easily share your bookmarks and collections with others. Create a shareable a link that you can send at the click of a button",
   },
 ];
+
+export const sections = ["FEATURES", "DOWNLOAD", "FAQ", "LOGIN"];

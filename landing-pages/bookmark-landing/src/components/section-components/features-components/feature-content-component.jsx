@@ -2,11 +2,11 @@ import { Button } from "../../Button";
 
 export const DynamicContent = ({ paragraph, title, image }) => {
   return (
-    <div className="flex flex-col max-w-md gap-14">
+    <div className="flex flex-col  gap-14 md:flex-row">
       <div>
-        <img src={image} />
+        <img src={image} className="mx-auto" />
       </div>
-      <div className=" flex flex-col justify-center text-center  gap-2 max-w-md ">
+      <div className=" flex flex-col  text-center  gap-2 mx-auto md:max-w-lg  ">
         <div className="text-3xl  font-semibold">{title}</div>
         <p className="text-slate-900  text-[1.05rem] opacity-45 leading-snug pt-6 p-1 tracking-[-0.020em] text-center ">
           {paragraph}
