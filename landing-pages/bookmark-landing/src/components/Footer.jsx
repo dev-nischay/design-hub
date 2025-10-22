@@ -1,8 +1,6 @@
 import logo from "../assets/logo-footer.svg";
 import { Twitter } from "lucide-react";
-
 import { sections } from "./section-components/features-components/feature-content";
-import { useState } from "react";
 export const Footer = () => {
   return (
     <div className=" relative inset-x-0 bg-DarkBlue ">

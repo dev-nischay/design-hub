@@ -18,15 +18,18 @@ export const FeatureTypes = ({ setState }) => {
   ];
 
   return (
-    <div className="flex  text-center flex-col gap-5 md:flex-row ">
-      {types.map((e, index) => (
+    <div className="flex flex-col gap-6   md:flex-row  md:items-center">
+      {/* {types.map((e, index) => (
         <LocalBtn
           key={index}
           content={e.content}
           setState={setState}
           featureType={e.title}
         />
-      ))}
+      ))} */}
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
     </div>
   );
 };
@@ -40,20 +43,16 @@ const LocalBtn = ({ featureType, content, setState }) => {
   };
 
   return (
-    <div onClick={handleClick}>
+    <div
+      onClick={handleClick}
+      className="md:inline-flex md:mx-2 cursor-pointer md:flex-none md:w-auto"
+    >
       <div
-        className={` text-center bg-none  text-md pb-6  ${
+        className={`bg-none text-md pb-6 ${
           click ? "text-red-500" : "text-black"
-        } `}
+        }`}
       >
         {featureType}
-      </div>
-      <div className="relative  border-[0.5px] border-neutral-300 ">
-        <div
-          className={`absolute border-2 border-red-400 -top-1 inset-x-32 transition-opacity ${
-            click ? "opacity-100" : "opacity-0"
-          } `}
-        ></div>
       </div>
     </div>
   );

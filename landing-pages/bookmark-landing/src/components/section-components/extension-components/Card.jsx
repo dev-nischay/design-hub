@@ -2,8 +2,8 @@ import { Button } from "../../Button";
 
 export const Card = ({ title, image, version }) => {
   return (
-    <div className="relative flex flex-col items-center max-w-5xl px-4">
-      <div className=" flex flex-col w-full justify-center py-6 space-y-4  rounded-lg shadow-lg md:w-1/3">
+    <div className="relative flex flex-col items-center max-w-5xl px-4 ">
+      <div className=" flex flex-col w-full justify-center py-6 space-y-4  items-center rounded-lg shadow-lg md:w-1/3">
         <div className="flex justify-center">
           <img src={image} alt="logo" />
         </div>
